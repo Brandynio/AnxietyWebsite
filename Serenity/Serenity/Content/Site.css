@@ -1,24 +1,83 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+	background-color: #355CD7;
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
+
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+/*Question your thoughts*/
+h2 {
+	color: white;
+	font-family: inherit;
+	margin: 10px;
+}
+.IntroToActivity {
+	color: white;
+	margin: 10px;
+	font-family: inherit;
+	font-size: 20px;
+}
+.QuestionOne {
+	color: black;
+	margin: 10px;
+	font-family: inherit;
+	font-size: 20px;
+}
+.QuestionTwo {
+	color: white;
+	margin: 10px;
+	font-family: inherit;
+	font-size: 20px;
+}
+.QuestionThree {
+	color: black;
+	margin: 10px;
+	font-family: inherit;
+	font-size: 20px;
+}
+.QuestionFour {
+	color: white;
+	margin: 10px;
+	font-family: inherit;
+	font-size: 20px;
+}
+.QuestionFive {
+	color: black;
+	margin: 10px;
+	font-family: inherit;
+	font-size: 20px;
+}
+.QuestionSix {
+	color: white;
+	margin: 10px;
+	font-family: inherit;
+	font-size: 20px;
+}
+.QuestionSeven {
+	color: black;
+	margin: 10px;
+	font-family: inherit;
+	font-size: 20px;
+}
+.QuestionEight {
+	color: white;
+	margin: 10px;
+	font-family: inherit;
+	font-size: 20px;
 }
