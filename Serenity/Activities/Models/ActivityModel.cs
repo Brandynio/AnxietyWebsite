@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Serenity.Models
+namespace Activities.Models
 {
 	public class ActivityModel
 	{
-		public string  { get; set; }
+		public string heck { get; set; }
 	}
 }
