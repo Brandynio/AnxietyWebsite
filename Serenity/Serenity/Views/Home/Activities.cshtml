@@ -1,4 +1,4 @@
-﻿
+﻿@model Serenity.Models.ActivityListModel
 @{
     ViewBag.Title = "Activities";
 }
@@ -16,13 +16,10 @@
 </div>
 
 <div class="listOfActivities">
-	<p>Brething Exercises
-		Aphbetlicly Animal Naming
-		5 Senses
-		Question Your Thoughts
-		Breaking Glass
-		Play Calming Music
-	</p>
+	@foreach(Serenity.Models.ActivityModel a in Model.Activities)
+    {
+        Html.RenderPartial("_ActivityPartial", a);
+    }
 </div>
 
 
