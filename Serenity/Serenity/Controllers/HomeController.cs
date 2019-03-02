@@ -40,6 +40,17 @@ namespace Serenity.Controllers
                     ActivityId = 3,
                     Rating = 0,
                     ScriptUrl = ""
+                    ActivityId = 2,
+                    ActivityName = "Belly Breathing",
+                    Rating = 0,
+                    ScriptUrl = "~/Scripts/Script_Belly.js"
+                },
+                new ActivityModel()
+                {
+                    ActivityId = 3,
+                    ActivityName = "Personal Activity",
+                    Rating = 0,
+                    ScriptUrl = "~/Scripts/script_personal.js"
                 }
             }
         };

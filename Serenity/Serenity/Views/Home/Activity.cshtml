@@ -6,6 +6,8 @@
 
 <h2>@Model.ActivityName</h2>
 
+<p>test</p>
+
 @if (Model.ActivityName == "Bubble Popping")
 {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
@@ -24,6 +26,10 @@ else if (Model.ActivityName == "Question Your Thoughts")
     <div class="QuestionYourThoughtsTitle">
         <h2>Question Your Thoughts</h2>
     </div>
+else if (Model.ActivityId == 2 || Model.ActivityId == 3)
+{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+}
 
     <div class="IntroToActivity">
         <p>
