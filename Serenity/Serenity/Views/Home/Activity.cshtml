@@ -11,10 +11,64 @@
 {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
 }
-else if (Model.ActivityId == 2 || Model.ActivityId == 3)
+else if (Model.ActivityName == "Belly Breathing" || Model.ActivityName == "Personal Activity")
 {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 }
+@if (Model.ActivityName == "Five Things Grounding")
+{
+    <div id="fiveThings">
+        <h1 id="mainText">5 4 3 2 1</h1>
+        <h3 id="subText">Hit the button to begin</h3>
+        <h4 id="contText">Click the button when you are ready to continue.</h4>
+        <div id="contBtn">Begin</div>
+    </div>
+}
+else if (Model.ActivityName == "Question Your Thoughts")
+{
+    <div class="QuestionYourThoughtsTitle">
+        <h2>Question Your Thoughts</h2>
+    </div>
+    <div class="IntroToActivity">
+        <p>
+            When people are anxious, their brains start coming up with all sorts of outlandish ideas,
+        </p>
+        <p>
+            many of which are highly unrealistic and unlikely to occur. Ask yourself these questions
+        </p>
+        <p>
+            when challenging your thoughts:
+        </p>
+    </div>
 
-<script src="@Url.Content(Model.ScriptUrl)"></script>
+    <div class="QuestionOne">
+        <p>
+            Is this worry realistic?
+        </p>
+    </div>
+
+    <div class="QuestionTwo">
+        <p>
+            Is this really likely to happen?
+        </p>
+    </div>
+
+    <div class="QuestionThree">
+        <p>
+            If the worst possible outcome happens, what would be so bad about that?
+        </p>
+    </div>
+
+    <div class="QuestionFour">
+        <p>
+            Could I handle that?
+        </p>
+    </div>
+
+    <div class="QuestionFive">
+        <p>
+            What might I do?
+        </p>
+    </div>
+
 
