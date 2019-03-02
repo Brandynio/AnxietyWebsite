@@ -1,7 +1,7 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-	background-color: #355CD7;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background: -webkit-linear-gradient(90deg, rgba(253,177,168,1) 0%, rgba(242,168,160,1) 15%, rgba(219,186,224,1) 47%, rgba(173,179,217,1) 69%, rgba(145,149,178,1) 100%);
 }
 
 .body-content {
@@ -18,6 +18,15 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.navbar {
+	background-color: white;
+	border: solid black 2px;
+	border-radius: 10px;
+	margin-left: 155px;
+	margin-right: 155px;
+	font-family: Handlee;
 }
 
 
@@ -185,3 +194,26 @@ h2 {
     #ContButton:focus {
         outline: none;
     }
+
+.recomend {
+	color: white;
+	margin: 10px
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: white;
+	margin: 10px;
+	font-family: Handlee;
+}
+.ratingClass {
+	color: white;
+	margin: 10px;
+	font-family: Handlee;
+}
+
+footer {
+	color: white;
+}
