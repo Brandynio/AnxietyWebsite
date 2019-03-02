@@ -8,9 +8,13 @@
 
 <p>test</p>
 
-@if(Model.ActivityName == "Bubble Popping")
+@if (Model.ActivityName == "Bubble Popping")
 {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+}
+else if (Model.ActivityId == 2 || Model.ActivityId == 3)
+{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 }
 
 <script src="@Url.Content(Model.ScriptUrl)"></script>

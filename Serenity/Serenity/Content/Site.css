@@ -136,3 +136,52 @@ h2 {
     padding: 7%;
     font-family: 'Lobster', cursive;
 }
+
+    /*Cristian Activities*/
+#ActivityBox {
+    font-family: "Quesha";
+    background: -webkit-linear-gradient(90deg, rgba(253,177,168,1) 0%, rgba(242,168,160,1) 15%, rgba(219,186,224,1) 47%, rgba(173,179,217,1) 69%, rgba(145,149,178,1) 100%);
+    width: 85%;
+    height: 500px;
+    margin-left: 6%;
+    color: #FDFDFD;
+}
+
+#DirectionHeader {
+    padding-top: 0%;
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+}
+
+#ActivityBox {
+    padding: 2%;
+}
+
+#DirectionBody {
+    margin-top: 8%;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    height: 100px;
+}
+
+#ContButton {
+    color: #355C7D;
+    background: rgba(248,177,149,0);
+    border: 0px;
+    bottom: 0;
+    width: 16%;
+    margin: 8% 41%;
+    font-size: 23px;
+    transition: 1s;
+}
+
+    #ContButton:hover {
+        font-size: 30px;
+        color: #FAFAFA;
+    }
+
+    #ContButton:focus {
+        outline: none;
+    }
