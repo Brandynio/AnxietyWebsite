@@ -12,7 +12,11 @@
 {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
 }
-else if (Model.ActivityName == "Five Things Grounding")
+else if (Model.ActivityName == "Belly Breathing" || Model.ActivityName == "Personal Activity")
+{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+}
+@if (Model.ActivityName == "Five Things Grounding")
 {
     <div id="fiveThings">
         <h1 id="mainText">5 4 3 2 1</h1>
@@ -26,11 +30,6 @@ else if (Model.ActivityName == "Question Your Thoughts")
     <div class="QuestionYourThoughtsTitle">
         <h2>Question Your Thoughts</h2>
     </div>
-else if (Model.ActivityId == 2 || Model.ActivityId == 3)
-{
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-}
-
     <div class="IntroToActivity">
         <p>
             When people are anxious, their brains start coming up with all sorts of outlandish ideas,
@@ -96,38 +95,35 @@ else if (Model.ActivityName == "Name Animals")
     <div class="NameAnimalsAlphabeticallyTitle">
         <h2>Name Animals Alphabetically</h2>
     </div>
-
-    <body>
-        <form name="myForm" action="post.html" onsubmit="return validate()" method="post">
-            <p><input type="text" id="letterA" placeholder="Animal starts with A" /></p>
-            <p><input type="text" id="letterB" placeholder="Animal starts with B" /></p>
-            <p><input type="text" id="letterC" placeholder="Animal starts with C" /></p>
-            <p><input type="text" id="letterD" placeholder="Animal starts with D" /></p>
-            <p><input type="text" id="letterE" placeholder="Animal starts with E" /></p>
-            <p><input type="text" id="letterF" placeholder="Animal starts with F" /></p>
-            <p><input type="text" id="letterG" placeholder="Animal starts with G" /></p>
-            <p><input type="text" id="letterH" placeholder="Animal starts with H" /></p>
-            <p><input type="text" id="letterI" placeholder="Animal starts with I" /></p>
-            <p><input type="text" id="letterJ" placeholder="Animal starts with J" /></p>
-            <p><input type="text" id="letterK" placeholder="Animal starts with K" /></p>
-            <p><input type="text" id="letterL" placeholder="Animal starts with L" /></p>
-            <p><input type="text" id="letterM" placeholder="Animal starts with M" /></p>
-            <p><input type="text" id="letterN" placeholder="Animal starts with N" /></p>
-            <p><input type="text" id="letterO" placeholder="Animal starts with O" /></p>
-            <p><input type="text" id="letterP" placeholder="Animal starts with P" /></p>
-            <p><input type="text" id="letterQ" placeholder="Animal starts with Q" /></p>
-            <p><input type="text" id="letterR" placeholder="Animal starts with R" /></p>
-            <p><input type="text" id="letterS" placeholder="Animal starts with S" /></p>
-            <p><input type="text" id="letterT" placeholder="Animal starts with T" /></p>
-            <p><input type="text" id="letterU" placeholder="Animal starts with U" /></p>
-            <p><input type="text" id="letterV" placeholder="Animal starts with V" /></p>
-            <p><input type="text" id="letterW" placeholder="Animal starts with W" /></p>
-            <p><input type="text" id="letterX" placeholder="Animal starts with X" /></p>
-            <p><input type="text" id="letterY" placeholder="Animal starts with Y" /></p>
-            <p><input type="text" id="letterZ" placeholder="Animal starts with Z" /></p>
-            <input type="submit" value="Continue" />
-        </form>
-    </body>
+    <form name="myForm" action="post.html" onsubmit="return validate()" method="post">
+        <p><input type="text" id="letterA" placeholder="Animal starts with A" /></p>
+        <p><input type="text" id="letterB" placeholder="Animal starts with B" /></p>
+        <p><input type="text" id="letterC" placeholder="Animal starts with C" /></p>
+        <p><input type="text" id="letterD" placeholder="Animal starts with D" /></p>
+        <p><input type="text" id="letterE" placeholder="Animal starts with E" /></p>
+        <p><input type="text" id="letterF" placeholder="Animal starts with F" /></p>
+        <p><input type="text" id="letterG" placeholder="Animal starts with G" /></p>
+        <p><input type="text" id="letterH" placeholder="Animal starts with H" /></p>
+        <p><input type="text" id="letterI" placeholder="Animal starts with I" /></p>
+        <p><input type="text" id="letterJ" placeholder="Animal starts with J" /></p>
+        <p><input type="text" id="letterK" placeholder="Animal starts with K" /></p>
+        <p><input type="text" id="letterL" placeholder="Animal starts with L" /></p>
+        <p><input type="text" id="letterM" placeholder="Animal starts with M" /></p>
+        <p><input type="text" id="letterN" placeholder="Animal starts with N" /></p>
+        <p><input type="text" id="letterO" placeholder="Animal starts with O" /></p>
+        <p><input type="text" id="letterP" placeholder="Animal starts with P" /></p>
+        <p><input type="text" id="letterQ" placeholder="Animal starts with Q" /></p>
+        <p><input type="text" id="letterR" placeholder="Animal starts with R" /></p>
+        <p><input type="text" id="letterS" placeholder="Animal starts with S" /></p>
+        <p><input type="text" id="letterT" placeholder="Animal starts with T" /></p>
+        <p><input type="text" id="letterU" placeholder="Animal starts with U" /></p>
+        <p><input type="text" id="letterV" placeholder="Animal starts with V" /></p>
+        <p><input type="text" id="letterW" placeholder="Animal starts with W" /></p>
+        <p><input type="text" id="letterX" placeholder="Animal starts with X" /></p>
+        <p><input type="text" id="letterY" placeholder="Animal starts with Y" /></p>
+        <p><input type="text" id="letterZ" placeholder="Animal starts with Z" /></p>
+        <input type="submit" value="Continue" />
+    </form>
 }
 
 <script src="@Url.Content(Model.ScriptUrl)"></script>
