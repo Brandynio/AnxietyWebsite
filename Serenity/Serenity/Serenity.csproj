@@ -249,7 +249,7 @@
     <Content Include="Views\Serenity\NameAnimalsAlphabetically.cshtml" />
     <Content Include="Views\Serenity\QuestionYourThoughts.cshtml" />
     <Content Include="Views\Home\Activity.cshtml" />
-    <Content Include="Views\Home\_ActivityPartial.cshtml" />
+    <Content Include="Views\Shared\_ActivityPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

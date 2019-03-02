@@ -32,7 +32,7 @@ namespace Serenity.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(activities);
         }
 
         public ActionResult About()
