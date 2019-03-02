@@ -95,6 +95,7 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 15px;
+    text-align: center;
     /* transition: background 2s; */
 }
 
@@ -126,6 +127,7 @@ h2 {
     transition: opacity 3s;
     opacity: 0;
     font-size: 2.5em;
+    text-align: center;
 }
 
 #fiveThings {

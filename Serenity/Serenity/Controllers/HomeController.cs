@@ -26,6 +26,20 @@ namespace Serenity.Controllers
                     ActivityId = 1,
                     Rating = 0,
                     ScriptUrl = "~/Scripts/fiveThings.js"
+                },
+                new ActivityModel()
+                {
+                    ActivityName = "Question Your Thoughts",
+                    ActivityId = 2,
+                    Rating = 0,
+                    ScriptUrl = ""
+                },
+                new ActivityModel()
+                {
+                    ActivityName = "Name Animals",
+                    ActivityId = 3,
+                    Rating = 0,
+                    ScriptUrl = ""
                 }
             }
         };
