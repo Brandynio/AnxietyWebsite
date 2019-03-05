@@ -25,14 +25,14 @@ namespace Serenity.Controllers
                     ActivityName = "Five Things Grounding",
                     ActivityId = 1,
                     Rating = 0,
-                    ScriptUrl = "~/Scripts/fiveThings.js"
+                    ScriptUrl = "/Scripts/fiveThings.js"
                 },
                 new ActivityModel()
                 {
                     ActivityName = "Question Your Thoughts",
                     ActivityId = 2,
                     Rating = 0,
-                    ScriptUrl = "~/Scripts/fiveThings.js"
+                    ScriptUrl = "/Scripts/fiveThings.js"
                 },
                 new ActivityModel()
                 {
@@ -45,14 +45,14 @@ namespace Serenity.Controllers
                     ActivityId = 4,
                     ActivityName = "Belly Breathing",
                     Rating = 0,
-                    ScriptUrl = "~/Scripts/Script_Belly.js"
+                    ScriptUrl = "/Scripts/Script_Belly.js"
                 },
                 new ActivityModel()
                 {
                     ActivityId = 5,
                     ActivityName = "Personal Activity",
                     Rating = 0,
-                    ScriptUrl = "~/Scripts/script_personal.js"
+                    ScriptUrl = "/Scripts/script_personal.js"
                 }
             }
         };
