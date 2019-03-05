@@ -1,0 +1,13 @@
+﻿@model Serenity.Models.ActivityModel
+
+@if(Model != null)
+{
+    <a href="/Home/Activity/@Model.ActivityId">
+        <h3>@Model.ActivityName</h3>
+
+        <p class="ratingClass">Rating: @Model.Rating / 5</p>
+
+    </a>
+
+}
+
