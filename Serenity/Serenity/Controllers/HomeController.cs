@@ -83,8 +83,21 @@ namespace Serenity.Controllers
         
         public ActionResult Activity(int id)
         {
-            
-            foreach(ActivityModel a in activities.Activities)
+
+            foreach (ActivityModel a in activities.Activities)
+            {
+                if (a.ActivityId == id)
+                {
+                    ActivityModel act = a;
+                    return View(act);
+                }
+            }
+            return View("Activities");
+        }
+
+        public ActionResult RateActivity(int id)
+        {
+            foreach (ActivityModel a in activities.Activities)
             {
                 if (a.ActivityId == id)
                 {

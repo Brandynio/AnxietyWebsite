@@ -212,6 +212,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\rate.js" />
     <Content Include="Scripts\Script_Belly.js" />
     <Content Include="Scripts\script_personal.js" />
     <Content Include="Web.config" />
@@ -253,6 +254,7 @@
     <Content Include="Views\Serenity\QuestionYourThoughts.cshtml" />
     <Content Include="Views\Home\Activity.cshtml" />
     <Content Include="Views\Home\_ActivityPartial.cshtml" />
+    <Content Include="Views\Home\RateActivity.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

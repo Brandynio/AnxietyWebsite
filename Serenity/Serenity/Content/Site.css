@@ -187,3 +187,12 @@ h2 {
     #ContButton:focus {
         outline: none;
     }
+
+.ratingBox{
+    border: black 1px solid;
+    background: #fab;
+}
+
+#ratingsDiv {
+    display: flex;
+}
