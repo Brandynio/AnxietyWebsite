@@ -1,10 +1,4 @@
-﻿body {
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,248,249,1)), color-stop(26%, rgba(255,248,249,1)), color-stop(66%, rgba(255,234,208,1)), color-stop(100%, rgba(255,202,188,1)));
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: auto;
-}
+﻿
 .body-content {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -206,6 +200,13 @@ h2 {
         outline: none;
     }
 
+.ratingBox{
+    border: black 1px solid;
+    background: #fab;
+}
+
+#ratingsDiv {
+    display: flex;
 .recomend {
 	color: white;
 	margin: 10px
