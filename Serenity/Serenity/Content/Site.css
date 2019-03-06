@@ -1,12 +1,11 @@
 ﻿body {
-    background: -webkit-linear-gradient(90deg, rgba(253,177,168,1) 0%, rgba(242,168,160,1) 15%, rgba(219,186,224,1) 47%, rgba(173,179,217,1) 69%, rgba(145,149,178,1) 100%);
-    padding-bottom: 200px;
-    background-color: #cccccc;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,248,249,1)), color-stop(26%, rgba(255,248,249,1)), color-stop(66%, rgba(255,234,208,1)), color-stop(100%, rgba(255,202,188,1)));
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: auto;
 }
+
 .body-content {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -14,223 +13,357 @@
 
 
 .dl-horizontal dt {
-    white-space: normal;
+	white-space: normal;
 }
 
 input,
 select,
 textarea {
-    max-width: 280px;
+	max-width: 280px;
 }
 
 .navbar {
-	background-color: white;
-	border: solid black 2px;
+	background-color: #ffd3ce;
+	border: solid gray 2px;
 	border-radius: 10px;
 	margin-left: 155px;
 	margin-right: 155px;
-	margin-bottom: 100px;
+	margin-top: 10px;
 	font-family: Handlee;
 }
 
+.navbar-brand {
+	color: gray;
+}
 
+.homeIndex {
+	color: gray
+}
 /*Question your thoughts*/
 h2 {
-	color: white;
-	font-family: inherit;
-	margin: 10px;
+	color: gray;
+	font-family: Handlee;
+	margin: 20px;
 	margin-bottom: 50px;
+	font-size: 50px;
+	margin-left: 650px
 }
+
 .IntroToActivity {
 	color: white;
 	margin: 10px;
 	font-family: inherit;
 	font-size: 20px;
 }
+
 .QuestionOne {
 	color: black;
 	margin: 10px;
 	font-family: inherit;
 	font-size: 20px;
 }
+
 .QuestionTwo {
 	color: white;
 	margin: 10px;
 	font-family: inherit;
 	font-size: 20px;
 }
+
 .QuestionThree {
 	color: black;
 	margin: 10px;
 	font-family: inherit;
 	font-size: 20px;
 }
+
 .QuestionFour {
 	color: white;
 	margin: 10px;
 	font-family: inherit;
 	font-size: 20px;
 }
+
 .QuestionFive {
 	color: black;
 	margin: 10px;
 	font-family: inherit;
 	font-size: 20px;
 }
+
 .QuestionSix {
 	color: white;
 	margin: 10px;
 	font-family: inherit;
 	font-size: 20px;
 }
+
 .QuestionSeven {
 	color: black;
 	margin: 10px;
 	font-family: inherit;
 	font-size: 20px;
 }
+
 .QuestionEight {
 	color: white;
 	margin: 10px;
 	font-family: inherit;
 	font-size: 20px;
 }
+
 #contBtn {
-    border: solid #F67280 5px;
-    transition: opacity 3s;
-    transition-delay: 3s;
-    opacity: 0;
-    background: #355C7D;
-    color: #F67280;
-    width: 15%;
-    min-width: 150px;
-    font-size: 2em;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 15px;
-    text-align: center;
-    /* transition: background 2s; */
+	border: solid #F67280 5px;
+	transition: opacity 3s;
+	transition-delay: 3s;
+	opacity: 0;
+	background: #355C7D;
+	color: #F67280;
+	width: 15%;
+	min-width: 150px;
+	font-size: 2em;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+	text-align: center;
+	/* transition: background 2s; */
 }
 
-    #contBtn:hover {
-        background: #557C9D;
-        /* transition: background 2s; */
-    }
+	#contBtn:hover {
+		background: #557C9D;
+		/* transition: background 2s; */
+	}
 
-    #contBtn:active {
-        background: #759CBD;
-        /* transition: background 0s; */
-    }
+	#contBtn:active {
+		background: #759CBD;
+		/* transition: background 0s; */
+	}
 
 #contText {
-    transition: opacity 3s;
-    transition-delay: 2s;
-    opacity: 0;
-    font-size: 1.5em;
+	transition: opacity 3s;
+	transition-delay: 2s;
+	opacity: 0;
+	font-size: 1.5em;
 }
 
 #subText {
-    transition: opacity 3s;
-    transition-delay: 1s;
-    opacity: 0;
-    font-size: 2em;
+	transition: opacity 3s;
+	transition-delay: 1s;
+	opacity: 0;
+	font-size: 2em;
 }
 
 #mainText {
-    transition: opacity 3s;
-    opacity: 0;
-    font-size: 2.5em;
-    text-align: center;
+	transition: opacity 3s;
+	opacity: 0;
+	font-size: 2.5em;
+	text-align: center;
 }
 
 #fiveThings {
-    user-select: none;
-    text-align: center;
-    background: #F8B195;
-    color: #6C5B7B;
-    padding: 7%;
-    font-family: 'Lobster', cursive;
+	user-select: none;
+	text-align: center;
+	background: #F8B195;
+	color: #6C5B7B;
+	padding: 7%;
+	font-family: 'Lobster', cursive;
 }
 
-    /*Cristian Activities*/
+/*Cristian Activities*/
 #ActivityBox {
-    font-family: "Quesha";
-    background: -webkit-linear-gradient(90deg, rgba(253,177,168,1) 0%, rgba(242,168,160,1) 15%, rgba(219,186,224,1) 47%, rgba(173,179,217,1) 69%, rgba(145,149,178,1) 100%);
-    width: 85%;
-    height: 500px;
-    margin-left: 6%;
-    color: #FDFDFD;
+	font-family: "Quesha";
+	background: -webkit-linear-gradient(90deg, rgba(253,177,168,1) 0%, rgba(242,168,160,1) 15%, rgba(219,186,224,1) 47%, rgba(173,179,217,1) 69%, rgba(145,149,178,1) 100%);
+	width: 85%;
+	height: 500px;
+	margin-left: 6%;
+	color: #FDFDFD;
 }
 
 #DirectionHeader {
-    padding-top: 0%;
-    text-align: center;
-    width: 100%;
-    font-size: 60px;
+	padding-top: 0%;
+	text-align: center;
+	width: 100%;
+	font-size: 60px;
 }
 
 #ActivityBox {
-    padding: 2%;
+	padding: 2%;
 }
 
 #DirectionBody {
-    margin-top: 8%;
-    width: 100%;
-    text-align: center;
-    font-size: 34px;
-    height: 100px;
+	margin-top: 8%;
+	width: 100%;
+	text-align: center;
+	font-size: 34px;
+	height: 100px;
 }
 
 #ContButton {
-    color: #355C7D;
-    background: rgba(248,177,149,0);
-    border: 0px;
-    bottom: 0;
-    width: 16%;
-    margin: 8% 41%;
-    font-size: 23px;
-    transition: 1s;
+	color: #355C7D;
+	background: rgba(248,177,149,0);
+	border: 0px;
+	bottom: 0;
+	width: 16%;
+	margin: 8% 41%;
+	font-size: 23px;
+	transition: 1s;
 }
 
-    #ContButton:hover {
-        font-size: 30px;
-        color: #FAFAFA;
-    }
+	#ContButton:hover {
+		font-size: 30px;
+		color: #FAFAFA;
+	}
 
-    #ContButton:focus {
-        outline: none;
-    }
+	#ContButton:focus {
+		outline: none;
+	}
 
-.ratingBox{
-    border: black 1px solid;
-    background: #fab;
-}
-
-#ratingsDiv {
-    display: flex;
 .recomend {
 	color: white;
 	margin: 10px
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, .h1 {
 	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.1;
-	color: white;
+	color: gray;
 	margin: 10px;
 	font-family: Handlee;
-}
-.ratingClass {
-	color: white;
-	margin: 10px;
-	font-family: Handlee;
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 35%;
+	border-radius: 10px;
+	margin-left: 15px;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	background-color: #ffd3ce;
+	border: solid gray 2px;
+	font-size: 20px;
+	text-align: center;
 }
 
-.activityTitle {
-	margin-top: 100px;
+h3, .h3 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: gray;
+	margin: 10px;
+	font-family: Handlee;
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 35%;
+	border-radius: 10px;
+	margin-left: 15px;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	background-color: #ffd3ce;
+	border: solid gray 2px;
+	font-size: 20px;
+	text-align: center;
 }
+
+h4, .h4 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: gray;
+	margin: 10px;
+	font-family: Handlee;
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 35%;
+	border-radius: 10px;
+	margin-left: 15px;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	background-color: #ffd3ce;
+	border: solid gray 2px;
+	font-size: 20px;
+}
+
+h5 .h5 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: gray;
+	margin: 10px;
+	font-family: Handlee;
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 35%;
+	border-radius: 10px;
+	margin-left: 15px;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	background-color: #ffd3ce;
+	border: solid gray 2px;
+	font-size: 20px;
+	text-align: center;
+}
+
+h6, .h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: gray;
+	margin: 10px;
+	font-family: Handlee;
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 35%;
+	border-radius: 10px;
+	margin-left: 15px;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	background-color: #ffd3ce;
+	border: solid gray 2px;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.ratingClass {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: gray;
+	margin: 10px;
+	font-family: Handlee;
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-top: 4%;
+	border-radius: 10px;
+	margin-left: 15px;
+	width: 249px;
+	height: 50px;
+	overflow: hidden;
+	background-color: #ffd3ce;
+	border: solid gray 2px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.WholeActivity {
+	float: left;
+	margin-right: 200px;
+	margin-left: 250px;
+}
+
 
 footer {
 	color: white;
