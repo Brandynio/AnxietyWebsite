@@ -26,6 +26,7 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Activities", "Activities", "Home")</li>
                 </ul>
+                <audio id='audio' onended='loadPlaylist()' src='music/madworld.mp3' controls autoplay></audio>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -42,5 +43,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="~/Scripts/play.js"></script>
 </body>
 </html>
