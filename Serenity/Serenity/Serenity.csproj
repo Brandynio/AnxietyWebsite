@@ -49,6 +49,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -173,6 +175,9 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="brandyn.cs">
+      <DependentUpon>serenityModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -185,6 +190,21 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="serenityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>serenityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="serenityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>serenityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="serenityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>serenityModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -215,6 +235,16 @@
     <Content Include="Scripts\rate.js" />
     <Content Include="Scripts\Script_Belly.js" />
     <Content Include="Scripts\script_personal.js" />
+    <Content Include="serenityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>serenityModel.edmx</DependentUpon>
+      <LastGenOutput>serenityModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="serenityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>serenityModel.edmx</DependentUpon>
+      <LastGenOutput>serenityModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -255,6 +285,13 @@
     <Content Include="Views\Home\Activity.cshtml" />
     <Content Include="Views\Home\_ActivityPartial.cshtml" />
     <Content Include="Views\Home\RateActivity.cshtml" />
+    <EntityDeploy Include="serenityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>serenityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="serenityModel.edmx.diagram">
+      <DependentUpon>serenityModel.edmx</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -271,6 +308,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
