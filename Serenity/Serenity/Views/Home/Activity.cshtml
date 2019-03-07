@@ -9,6 +9,7 @@
 
 @if (Model.ActivityName == "Bubble Popping")
 {
+    <a href="/Home/RateActivity/@Model.ActivityId"><div id="bubbleCont">Continue</div></a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
 }
 else if (Model.ActivityName == "Belly Breathing" || Model.ActivityName == "Personal Activity")
