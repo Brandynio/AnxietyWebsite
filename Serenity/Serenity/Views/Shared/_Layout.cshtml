@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
 </head>
 <body>
+	<div >
+		<div class="navbar">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -17,16 +19,15 @@
                 </button>
                 @Html.ActionLink("Serenity", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Activities", "Activities", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                <audio id="audio" onended='loadPlaylist()' src='~/Content/music/bensound-betterdays.mp3' controls autoplay></audio>
-                <script src="~/Scripts/play.js"></script>
-                @Html.Partial("_LoginPartial")
-            </div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="homeColor">@Html.ActionLink("Home", "Index", "Home")</li>
+					<li class="homeColor">@Html.ActionLink("Activities", "Activities", "Home")</li>
+				</ul>
+				<audio class="audio" onended='loadPlaylist()' src='~/Content/music/bensound-betterdays.mp3' controls autoplay></audio>
+				<script src="~/Scripts/play.js"></script>
+				@Html.Partial("_LoginPartial")
+			</div>
         </div>
     </div>
     <div>
