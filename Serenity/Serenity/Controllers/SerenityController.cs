@@ -14,15 +14,5 @@ namespace Serenity.Controllers
             return View();
         }
 
-		public ActionResult NameAnimalsAlphabetically()
-		{
-			return View();
-		}
-
-		public ActionResult QuestionYourThoughts()
-		{
-			return View();
-		}
-
 	}
 }
