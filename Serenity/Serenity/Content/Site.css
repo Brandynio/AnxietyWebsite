@@ -6,9 +6,17 @@
 	background-size: auto;
 }
 
+#HomeBanner {
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-family: Handlee;
+    font-size: 50px;
+}
+
 .body-content {
-	padding-left: 15px;
-	padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 

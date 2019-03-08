@@ -13,5 +13,9 @@ namespace Serenity.Models
         {
             Activities = activities;
         }
+
+        public ActivityListModel()
+        {
+        }
     }
 }
