@@ -11,5 +11,6 @@ namespace Serenity.Models
 		public String ActivityName { get; set; }
 		public int ActivityId { get; set; }
 		public int Rating { get; set; }
-	}
+        public int newRating { get; set; }
+    }
 }

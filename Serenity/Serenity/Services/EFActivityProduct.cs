@@ -58,7 +58,13 @@ namespace Serenity.Services
         {
             using(var context = new SerenityDatabaseEntities())
             {
-                context.Activities.Add(activity);
+                context.Activities.Add(new Activity()
+                {
+                    ActivityId = activity.ActivityId,
+                    ActivityName = activity.ActivityName,
+                    ScriptUrl = activity.ScriptUrl,
+                    Raiting = activity.Rating
+                });
                 context.Entry(activity).State = System.Data.Entity.EntityState.Modified;
                 context.SaveChanges();
             }
