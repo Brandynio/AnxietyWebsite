@@ -24,7 +24,7 @@
 					<li class="homeColor">@Html.ActionLink("Home", "Index", "Home")</li>
 					<li class="homeColor">@Html.ActionLink("Activities", "Activities", "Home")</li>
 				</ul>
-				<audio class="audio" onended='loadPlaylist()' src='~/Content/music/bensound-betterdays.mp3' controls autoplay></audio>
+				<audio id="audio" onended='loadPlaylist()' src='~/Content/music/bensound-betterdays.mp3' controls autoplay></audio>
 				<script src="~/Scripts/play.js"></script>
 				@Html.Partial("_LoginPartial")
 			</div>
