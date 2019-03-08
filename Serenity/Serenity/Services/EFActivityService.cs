@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Serenity.Services
 {
-    public class EFActivityProduct
+    public class EFActivityService
     {
         public ActivityListModel GetAllActivities()
         {
@@ -38,34 +38,35 @@ namespace Serenity.Services
 
         public ActivityModel GetActivityById(int id)
         {
-            ActivityModel activity = null;
+            
             using(var context = new SerenityDatabaseEntities())
             {
                 var activityEntity = context.Activities.SingleOrDefault(a => a.ActivityId == id);
 
-                activity = new ActivityModel()
+                ActivityModel activity = new ActivityModel()
                 {
                     ActivityId = activityEntity.ActivityId,
                     ActivityName = activityEntity.ActivityName,
                     ScriptUrl = activityEntity.ScriptUrl,
                     Rating = activityEntity.Raiting
                 };
+                return activity;
             }
-            return activity;
         }
 
         public void UpdateActivity(ActivityModel activity)
         {
             using(var context = new SerenityDatabaseEntities())
             {
-                context.Activities.Add(new Activity()
+                Activity act = new Activity()
                 {
                     ActivityId = activity.ActivityId,
                     ActivityName = activity.ActivityName,
                     ScriptUrl = activity.ScriptUrl,
                     Raiting = activity.Rating
-                });
-                context.Entry(activity).State = System.Data.Entity.EntityState.Modified;
+                };
+                context.Activities.Add(act);
+                context.Entry(GetActivityById(act.ActivityId)).State = System.Data.Entity.EntityState.Modified;
                 context.SaveChanges();
             }
         }

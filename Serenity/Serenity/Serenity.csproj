@@ -205,7 +205,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>serenityModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Services\EFActivityProduct.cs" />
+    <Compile Include="Services\EFActivityService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>

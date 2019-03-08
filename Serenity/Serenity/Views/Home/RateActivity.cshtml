@@ -6,21 +6,22 @@
 
 <h2>Rate @Model.ActivityName</h2>
 
-<div id="help">
-    <p>1. Did this activity help you?</p>
-    <div id="helpYes">Yes</div>
-    <div id="helpNo">No</div>
-</div>
-
-<div id="ratingsDiv">
-    <p>Please Rate This Activity</p>
-    <div class="ratingBox" id="rate1">1</div>
-    <div class="ratingBox" id="rate2">2</div>
-    <div class="ratingBox" id="rate3">3</div>
-    <div class="ratingBox" id="rate4">4</div>
-    <div class="ratingBox" id="rate5">5</div>
-</div>
-
-<div id="submitRating">Submit</div>
-
-<script src="~/Scripts/rate.js"></script>
+@using (Html.BeginForm("RateActivity", "Home", FormMethod.Post))
+{
+    @*<label>Did this activity help you?</label>*@
+    @*<br />*@
+    <label>Please rate this activity:</label>
+    <br />
+    @Html.RadioButton("NewRating", 1);
+    <p>1</p>
+    @Html.RadioButton("NewRating", 2);
+    <p>2</p>
+    @Html.RadioButton("NewRating", 3);
+    <p>3</p>
+    @Html.RadioButton("NewRating", 4);
+    <p>4</p>
+    @Html.RadioButton("NewRating", 5);
+    <p>5</p>
+    <br />
+    <input type="submit" value="Submit" validationGroup="AllValidators"/>
+}

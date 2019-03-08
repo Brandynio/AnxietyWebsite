@@ -1,4 +1,5 @@
 ﻿using Serenity.Models;
+using Serenity.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,58 +10,11 @@ namespace Serenity.Controllers
 {
     public class HomeController : Controller
     {
-        ActivityListModel activities = new ActivityListModel()
-        {
-            Activities = new List<ActivityModel>()
-            {
-                new ActivityModel()
-                {
-                    ActivityName = "Bubble Popping",
-                    ActivityId = 0,
-                    Rating = 0,
-                    ScriptUrl = "/Scripts/bubbles.js"
-                },
-                new ActivityModel()
-                {
-                    ActivityName = "Five Things Grounding",
-                    ActivityId = 1,
-                    Rating = 0,
-                    ScriptUrl = "/Scripts/fiveThings.js"
-                },
-                new ActivityModel()
-                {
-                    ActivityName = "Question Your Thoughts",
-                    ActivityId = 2,
-                    Rating = 0,
-                    ScriptUrl = "/Scripts/fiveThings.js"
-                },
-                new ActivityModel()
-                {
-                    ActivityName = "Name Animals",
-                    ActivityId = 3,
-                    Rating = 0,
-                    ScriptUrl = "/Scripts/fiveThings.js"
-                },
-                new ActivityModel()
-				{
-                    ActivityName = "Belly Breathing",
-                    ActivityId = 4,
-                    Rating = 0,
-                    ScriptUrl = "/Scripts/Script_Belly.js"
-                },
-                new ActivityModel()
-                {
-                    ActivityName = "Personal Activity",
-                    ActivityId = 5,
-                    Rating = 0,
-                    ScriptUrl = "/Scripts/script_personal.js"
-                }
-            }
-        };
+        EFActivityService service = new EFActivityService();
 
         public ActionResult Index()
         {
-            return View(activities);
+            return View(service.GetAllActivities());
         }
 
         public ActionResult About()
@@ -79,26 +33,18 @@ namespace Serenity.Controllers
 
         public ActionResult Activities()
         {
-            return View(activities);
+            return View(service.GetAllActivities());
         }
         
         public ActionResult Activity(int id)
         {
-
-            foreach (ActivityModel a in activities.Activities)
-            {
-                if (a.ActivityId == id)
-                {
-                    ActivityModel act = a;
-                    return View(act);
-                }
-            }
-            return View("Activities");
+            ActivityModel act = service.GetActivityById(id);
+            return View(act);
         }
 
         public ActionResult RateActivity(int id)
         {
-            foreach (ActivityModel a in activities.Activities)
+            foreach (ActivityModel a in service.GetAllActivities().Activities)
             {
                 if (a.ActivityId == id)
                 {
@@ -110,9 +56,14 @@ namespace Serenity.Controllers
         }
 
         [HttpPost]
-        public ActionResult RateActivity()
+        public ActionResult RateActivity(ActivityModel activity)
         {
-
+            if (ModelState.IsValid)
+            {
+                ActivityModel act = activity;
+                act.Rating = (act.Rating + act.newRating) / 2;
+                service.UpdateActivity(act);
+            }
             return View("Index");
         }
     }
