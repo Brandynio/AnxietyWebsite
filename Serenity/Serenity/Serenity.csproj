@@ -170,14 +170,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity.cs">
+      <DependentUpon>serenityModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="brandyn.cs">
-      <DependentUpon>serenityModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -205,6 +205,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>serenityModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Services\EFActivityProduct.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -219,6 +220,7 @@
     <Content Include="Content\music\bensound-tenderness.mp3" />
     <Content Include="Content\music\bensound-thelounge.mp3" />
     <Content Include="Content\music\bensound-tomorrow.mp3" />
+    <Content Include="Content\pictures\Logo.png" />
     <Content Include="Scripts\jplayer.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -292,8 +294,6 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Activities.cshtml" />
-    <Content Include="Views\Serenity\NameAnimalsAlphabetically.cshtml" />
-    <Content Include="Views\Serenity\QuestionYourThoughts.cshtml" />
     <Content Include="Views\Home\Activity.cshtml" />
     <Content Include="Views\Home\_ActivityPartial.cshtml" />
     <Content Include="Views\Home\RateActivity.cshtml" />

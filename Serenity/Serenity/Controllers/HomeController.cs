@@ -36,7 +36,7 @@ namespace Serenity.Controllers
                 },
                 new ActivityModel()
                 {
-                    ActivityName = "Name Animals",
+                    ActivityName = "Naming Animals",
                     ActivityId = 3,
                     Rating = 0,
                     ScriptUrl = "/Scripts/fiveThings.js"
