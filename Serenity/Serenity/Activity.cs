@@ -12,10 +12,11 @@ namespace Serenity
     using System;
     using System.Collections.Generic;
     
-    public partial class brandyn
+    public partial class Activity
     {
-        public int brandID { get; set; }
-        public string snaks { get; set; }
-        public string drinks { get; set; }
+        public int ActivityId { get; set; }
+        public string ScriptUrl { get; set; }
+        public string ActivityName { get; set; }
+        public int Raiting { get; set; }
     }
 }

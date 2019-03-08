@@ -25,6 +25,6 @@ namespace Serenity
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<brandyn> brandyns { get; set; }
+        public virtual DbSet<Activity> Activities { get; set; }
     }
 }
