@@ -169,17 +169,21 @@ h2 {
 	}
 
 #contText {
-	transition: opacity 3s;
-	transition-delay: 2s;
-	opacity: 0;
-	font-size: 1.5em;
+    transition: opacity 3s;
+    transition-delay: 2s;
+    opacity: 0;
+    color: #6C5B7B;
+    font-size: 1.5em;
 }
 
 #subText {
-	transition: opacity 3s;
-	transition-delay: 1s;
-	opacity: 0;
-	font-size: 2em;
+    transition: opacity 3s;
+    transition-delay: 1s;
+    opacity: 0;
+    font-size: 2em;
+    color: #6C5B7B;
+    border: none;
+    background: none;
 }
 
 #mainText {
@@ -200,12 +204,13 @@ h2 {
 
 /*Cristian Activities*/
 #ActivityBox {
-	font-family: "Quesha";
-	background: -webkit-linear-gradient(90deg, rgba(253,177,168,1) 0%, rgba(242,168,160,1) 15%, rgba(219,186,224,1) 47%, rgba(173,179,217,1) 69%, rgba(145,149,178,1) 100%);
-	width: 85%;
-	height: 500px;
-	margin-left: 6%;
-	color: #FDFDFD;
+    font-family: "Quesha";
+    background: -webkit-linear-gradient(90deg, rgba(253,177,168,1) 0%, rgba(242,168,160,1) 15%, rgba(219,186,224,1) 47%, rgba(173,179,217,1) 69%, rgba(145,149,178,1) 100%);
+    width: 85%;
+    height: 500px;
+    margin-left: 6%;
+    color: #FDFDFD;
+    padding: 2%;
 }
 
 #DirectionHeader {
@@ -213,10 +218,6 @@ h2 {
 	text-align: center;
 	width: 100%;
 	font-size: 60px;
-}
-
-#ActivityBox {
-	padding: 2%;
 }
 
 #DirectionBody {
@@ -247,7 +248,7 @@ h2 {
 		outline: none;
 	}
 
-/*h1, .h1 {
+h1, .h1 {
 	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.1;
@@ -267,7 +268,7 @@ h2 {
 	border: solid gray 2px;
 	font-size: 20px;
 	text-align: center;
-}*/
+}
 
 h3, .h3 {
 	font-family: inherit;
