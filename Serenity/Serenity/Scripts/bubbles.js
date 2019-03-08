@@ -1,6 +1,7 @@
 let canvasHeight = 500;
 let canvasWidth = 1500
 let bubbleArr = [];
+var cont = document.getElementById('bubbleCont');
 
 function setup() {
     createCanvas(canvasWidth, canvasHeight);

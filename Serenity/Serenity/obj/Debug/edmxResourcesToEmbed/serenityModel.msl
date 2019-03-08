@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="SerenityDatabaseModelStoreContainer" CdmEntityContainer="SerenityDatabaseEntities">
-    <EntitySetMapping Name="brandyns">
-      <EntityTypeMapping TypeName="SerenityDatabaseModel.brandyn">
-        <MappingFragment StoreEntitySet="brandyn">
-          <ScalarProperty Name="brandID" ColumnName="brandID" />
-          <ScalarProperty Name="snaks" ColumnName="snaks" />
-          <ScalarProperty Name="drinks" ColumnName="drinks" />
+    <EntitySetMapping Name="Activities">
+      <EntityTypeMapping TypeName="SerenityDatabaseModel.Activity">
+        <MappingFragment StoreEntitySet="Activity">
+          <ScalarProperty Name="Raiting" ColumnName="Raiting" />
+          <ScalarProperty Name="ActivityName" ColumnName="ActivityName" />
+          <ScalarProperty Name="ScriptUrl" ColumnName="ScriptUrl" />
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -108,5 +108,12 @@ namespace Serenity.Controllers
             }
             return View("Activities");
         }
+
+        [HttpPost]
+        public ActionResult RateActivity()
+        {
+
+            return View("Index");
+        }
     }
 }
