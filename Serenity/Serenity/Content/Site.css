@@ -219,7 +219,7 @@ h2 {
 		outline: none;
 	}
 
-h1, .h1 {
+/*h1, .h1 {
 	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.1;
@@ -239,7 +239,7 @@ h1, .h1 {
 	border: solid gray 2px;
 	font-size: 20px;
 	text-align: center;
-}
+}*/
 
 h3, .h3 {
 	font-family: inherit;
