@@ -4,6 +4,7 @@ let bubbleArr = [];
 var cont = document.getElementById('bubbleCont');
 
 function setup() {
+    console.log("Why arent you fucking working?")
     createCanvas(canvasWidth, canvasHeight);
     let randRad = 0;
     for (let i = 0; i < 15; i++) {
