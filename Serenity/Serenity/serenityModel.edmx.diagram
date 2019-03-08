@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="57b03ee2b3f94085a066f9c7082b8e35" Name="Diagram1">
-        <EntityTypeShape EntityType="SerenityDatabaseModel.brandyn" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SerenityDatabaseModel.Activity" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -22,7 +22,7 @@ textarea {
 	max-width: 280px;
 }
 
-.navbar {
+.navbar-collapse collapse {
 	background-color: #ffd3ce;
 	border: solid gray 2px;
 	border-radius: 10px;
