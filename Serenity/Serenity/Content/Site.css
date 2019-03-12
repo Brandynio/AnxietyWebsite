@@ -418,3 +418,33 @@ footer {
 	width: 150px;
 	height: 100px
 }
+
+.c {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.r, .vase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 20%;
+    margin: 1% 0%;
+}
+
+    .vase img {
+        max-width: 150px;
+        max-height: 100px;
+    }
+
+.area {
+    text-align: center;
+}
+
+#dog {
+    padding: 10%;
+}

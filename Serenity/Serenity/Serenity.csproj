@@ -220,7 +220,19 @@
     <Content Include="Content\music\bensound-tenderness.mp3" />
     <Content Include="Content\music\bensound-thelounge.mp3" />
     <Content Include="Content\music\bensound-tomorrow.mp3" />
+    <Content Include="Content\pictures\BVase1.png" />
+    <Content Include="Content\pictures\BVase2.png" />
+    <Content Include="Content\pictures\BVase3.png" />
+    <Content Include="Content\pictures\BVase4.png" />
+    <Content Include="Content\pictures\BVase5.png" />
+    <Content Include="Content\pictures\dogBeforePet.png" />
+    <Content Include="Content\pictures\dogPet.gif" />
     <Content Include="Content\pictures\Logo.png" />
+    <Content Include="Content\pictures\Vase1.png" />
+    <Content Include="Content\pictures\Vase2.png" />
+    <Content Include="Content\pictures\Vase3.png" />
+    <Content Include="Content\pictures\Vase4.png" />
+    <Content Include="Content\pictures\Vase5.png" />
     <Content Include="Scripts\animals.js" />
     <Content Include="Scripts\jplayer.js" />
     <Content Include="favicon.ico" />
@@ -230,6 +242,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Compile Include="Models\ActivityModel.cs" />
+    <None Include="Properties\PublishProfiles\SerenityAnxietyRelief - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bubbles.js" />
     <Content Include="Scripts\fiveThings.js" />
@@ -248,6 +261,8 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\play.js" />
     <Content Include="Scripts\rate.js" />
+    <Content Include="Scripts\scriptDog.js" />
+    <Content Include="Scripts\scriptVase.js" />
     <Content Include="Scripts\Script_Belly.js" />
     <Content Include="Scripts\script_personal.js" />
     <Content Include="serenityModel.Context.tt">
@@ -296,7 +311,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Activities.cshtml" />
     <Content Include="Views\Home\Activity.cshtml" />
-    <Content Include="Views\Home\_ActivityPartial.cshtml" />
     <Content Include="Views\Home\RateActivity.cshtml" />
     <EntityDeploy Include="serenityModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
