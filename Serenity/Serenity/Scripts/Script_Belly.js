@@ -9,7 +9,7 @@ var stepDesc = ["sit and let your arms rest, either on your thighs or on your si
 function SetUp(){
     var ActivityBox = document.createElement("div");
     var FadeArea = document.createElement("div");
-    var DirectionHeader = document.createElement("h1");
+    var DirectionHeader = document.createElement("p");
     var DirectionBody = document.createElement("p");
     var ContButton = document.createElement("button");
     ActivityBox.id = "ActivityBox";

@@ -396,11 +396,14 @@ hr {
 	background-color: white;
 }
 footer {
-	position: absolute;
-	bottom: -500px;
-	width: 100%;
-	height: 0px; 
-	background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: transparent;
 }
 
 .audio {
@@ -427,6 +430,10 @@ footer {
     margin: 5px;
 }
 
+#r0{
+    padding-left: 14%;
+}
+
 .r, .vase {
     display: flex;
     flex-direction: row;
@@ -446,5 +453,5 @@ footer {
 }
 
 #dog {
-    padding: 10%;
+    padding: 4%;
 }
